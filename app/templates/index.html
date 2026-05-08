@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>大学生心理健康检测系统</title>
+</head>
+<body>
+    <h1>心理健康检测</h1>
+    <form method="POST" action="/analyze">
+        <textarea name="text" rows="5" cols="50" placeholder="输入你的心情描述..."></textarea><br>
+        <button type="submit">分析</button>
+    </form>
+    {% if result %}
+    <h3>分析结果：{{ result }}</h3>
+    {% endif %}
+</body>
+</html>
